@@ -1,0 +1,55 @@
+Ammar KhakhryawalaEmail: ammar23080@iiitd.ac.in
+LinkedIn Mobile: +91-9310257659
+Github Delhi, India
+Education
+•Indraprastha Institute of Information Technology (IIITD)Delhi, India
+B.Tech - Computer Science and Engineering; CGPA: 7.82 (till 5th Semester) 2023 - Present
+•Indian High School Dubai, UAE
+CBSE 12th Board; Percentage: 94.4 2022 - 2023
+Skills
+•Languages:JavaScript, TypeScript, Python, Java, C++, C, HTML, CSS, MySQL, PostgreSQL
+•Tools & Frameworks:ReactJS, Angular, Node.js, FastAPI, Docker, Redis, Git, Linux (Ubuntu), AWS (Lambda),
+Cypress, VSCode, IntelliJ, Figma, Miro, Canva
+•Courses:Data Structures and Algorithms, Operating Systems, Database Management Systems, Computer
+Networks, Discrete Mathematics, Analysis and Design of Algorithms, Probability and Statistics, Machine Learning
+Experience
+•Zhylar Technologies
+SWE Intern (Industrial) May 2025 - Jul 2025
+◦Worked on backend development usingAWS Lambdaand related cloud services; supported internal tooling
+and feature delivery.
+◦Developed and validatedREST APIsand optimized SQL queries (joins, aggregations) for analysis and
+reporting workflows. BuiltCypressend-to-end tests to automate critical UI flows and reduce manual QA
+overhead.
+Projects
+•DocSearch Sep 2025 - Dec 2025
+FastAPI, Postgres/pgvector, OpenSearch, MinIO, Ollama, RAG
+◦Built an end-to-end RAG pipeline withdocument ingestion, indexing, and QAusing
+sentence-transformerswith object storage, vector DB, and search index for low-latency retrieval and
+grounded generation.
+◦Implementedhybrid retrievalandreranking(bge-reranker) and tracked experiments with prompt/context
+traceability for debugging and evaluation.
+•Intelligent Interruption HandlingDec 2025 - Jan 2026
+Python, LiveKit Agents, Deepgram (STT/TTS), Silero VAD, pytest, Ollama/OpenAI
+◦Implemented a low-latency pending interruption gate (300 ms, configurable) to reduce false Voice-Active
+Detection overlaps from backchannel words during Text-To-Speech while still interrupting immediately on clear
+stop intents.
+◦Added configurable ignore/interrupt wordlists with backchannel normalization, shipped unit and regression
+tests, and validated behavior via automated cases and live console/dev runs.
+•Txcat - Transaction CategorizationOct 2025 - Nov 2025
+FastAPI, Redis, Celery, NumPy, Pandas, Docker, Machine Learning
+◦Built a transaction categorization web app that maps UPI/card descriptions into a50+ label taxonomy(e.g.,
+Dining, Investments, Loans, Education).
+◦Implemented asynchronous processing and containerization for local deployment; trained a hierarchical ML
+classifier (Logistic Regression/Complement NB) achieving96.6%accuracy.
+•BimaSathi Jan 2026 - Mar 2026
+Node.js, AWS Lambda, DynamoDB, S3, Bedrock, Textract, Rekognition, Transcribe, Cognito,
+WhatsApp API, Twilio
+◦Built aserverless, secure WhatsApp-first crop insurance assistantwith support for7 languages,
+enabling guided claim filing, tracking, appeals, and operator workflows.
+◦ImplementedAI pipelinesfor OCR, speech-to-text, insurer form auto-fill, PDF claim-pack generation, and
+identity/photo verificationwith audit logs and secure evidence storage.
+Awards and Achievements
+•AI for Bharat: Top300among30,000 teamsacross India.
+•Goldman Sachs CS Hackathon: Ranked in thetop 400among2500+participants across India.
+•GHCI Hackathon 2025: Advanced toRound 2among5000+teams.
+•Codeforces:Specialist(Rating1461).

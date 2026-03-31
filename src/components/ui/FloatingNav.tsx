@@ -11,30 +11,32 @@ export const FloatingNav = () => {
         setIsDark(document.documentElement.classList.contains('dark'));
     }, []);
 
-    // ScrollSpy Logic via true Absolute Viewport Bounding
+    // ScrollSpy Logic via true Absolute Viewport Bounding (Optimized with rAF)
     useEffect(() => {
+        let ticking = false;
+
         const handleScroll = () => {
-            const projectsEl = document.getElementById("projects");
-            const contactEl = document.getElementById("contact");
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const projectsEl = document.getElementById("projects");
+                    const contactEl = document.getElementById("contact");
+                    const threshold = window.innerHeight * 0.4;
+                    let currentSection = "Home";
 
-            // Trigger threshold at 40% of the viewport height from the top
-            const threshold = window.innerHeight * 0.4;
+                    if (contactEl && contactEl.getBoundingClientRect().top <= threshold + 300) {
+                        currentSection = "Contact";
+                    } else if (projectsEl && projectsEl.getBoundingClientRect().top <= threshold) {
+                        currentSection = "Projects";
+                    }
 
-            let currentSection = "Home";
-
-            // getBoundingClientRect().top yields distance from current scroll position to the top of the viewport.
-            // If it is <= threshold, it means the top of the element has breached the 40% trigger line!
-            if (contactEl && contactEl.getBoundingClientRect().top <= threshold + 300) {
-                currentSection = "Contact";
-            } else if (projectsEl && projectsEl.getBoundingClientRect().top <= threshold) {
-                currentSection = "Projects";
+                    setActive((prev) => (prev !== currentSection ? currentSection : prev));
+                    ticking = false;
+                });
+                ticking = true;
             }
-
-            setActive((prev) => (prev !== currentSection ? currentSection : prev));
         };
 
         window.addEventListener("scroll", handleScroll, { passive: true });
-        // Run once on load to establish correct state
         handleScroll();
 
         return () => window.removeEventListener("scroll", handleScroll);
@@ -57,6 +59,25 @@ export const FloatingNav = () => {
         { name: "Contact", link: "#contact" }
     ];
 
+    const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, link: string, name: string) => {
+        e.preventDefault();
+        setActive(name);
+
+        if (link === "#") {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            return;
+        }
+
+        const element = document.querySelector(link);
+        if (element) {
+            const offsetTop = element.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({
+                top: offsetTop - 80,
+                behavior: "smooth"
+            });
+        }
+    };
+
     return (
         <motion.div
             initial={{ y: -100, opacity: 0 }}
@@ -70,17 +91,17 @@ export const FloatingNav = () => {
                     <a
                         key={item.name}
                         href={item.link}
-                        onClick={() => setActive(item.name)}
+                        onClick={(e) => scrollToSection(e, item.link, item.name)}
                         className={`relative px-5 py-2 rounded-full text-sm font-semibold tracking-wide transition-all duration-500 ${active === item.name
-                                ? "text-black dark:text-white"
-                                : "text-black/60 hover:text-black dark:text-white/60 dark:hover:text-white"
+                            ? "text-black dark:text-white"
+                            : "text-black/60 hover:text-black dark:text-white/60 dark:hover:text-white"
                             }`}
                     >
                         {active === item.name && (
                             <motion.div
                                 layoutId="apple-bubble"
-                                className="absolute inset-0 bg-black/5 dark:bg-white/10 backdrop-blur-xl border border-black/10 dark:border-white/20 shadow-[0_8px_16px_rgba(0,0,0,0.1)] rounded-full"
-                                transition={{ type: "spring", bounce: 0.25, duration: 0.6 }}
+                                className="absolute inset-0 bg-black/10 dark:bg-white/15 backdrop-blur-2xl border border-black/10 dark:border-white/25 shadow-xl rounded-full"
+                                transition={{ type: "spring", stiffness: 350, damping: 35, mass: 0.8 }}
                             />
                         )}
                         <span className="relative z-10">{item.name}</span>

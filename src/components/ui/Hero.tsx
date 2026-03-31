@@ -35,7 +35,7 @@ export const Hero = () => {
                     </motion.span>
 
                     {/* Blur Text Sequence for the Name */}
-                    <h1 className="text-[4rem] md:text-8xl lg:text-[11rem] font-black tracking-tighter leading-none flex flex-wrap justify-center gap-x-[1.5rem] md:gap-x-[2.5rem] mb-8">
+                    <h1 className="text-[5rem] md:text-8xl lg:text-[10rem] font-black tracking-tighter leading-none flex flex-wrap justify-center gap-x-[1.5rem] md:gap-x-[2.5rem] mb-8">
                         {words.map((word, wordIndex) => {
                             return (
                                 <span key={wordIndex} className="inline-flex whitespace-nowrap">
@@ -51,7 +51,7 @@ export const Hero = () => {
                                                     ease: [0.16, 1, 0.3, 1],
                                                     delay: currentIndex * 0.08
                                                 }}
-                                                className="text-black dark:text-white drop-shadow-sm dark:drop-shadow-lg"
+                                                className="text-black dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-b dark:from-white dark:to-white/20 drop-shadow-xl transition-colors duration-500"
                                             >
                                                 {char}
                                             </motion.span>

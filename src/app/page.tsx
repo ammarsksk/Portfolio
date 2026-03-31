@@ -1,6 +1,8 @@
 import { Hero } from "@/components/ui/Hero";
 import { Projects } from "@/components/ui/Projects";
+import { Terminal } from "@/components/ui/Terminal";
 import { FloatingNav } from "@/components/ui/FloatingNav";
+import { GithubHeatmap } from "@/components/ui/GithubHeatmap";
 
 export default function Home() {
   return (
@@ -15,6 +17,9 @@ export default function Home() {
         {/* The Skill Map & Projects Ecosystem */}
         <div className="w-full bg-white dark:bg-black relative border-t border-black/10 dark:border-white/10 transition-colors duration-500">
           <Projects />
+
+          {/* Interactive Hacker Terminal */}
+          <Terminal />
         </div>
       </div>
 
@@ -27,11 +32,18 @@ export default function Home() {
         <div className="absolute top-0 left-1/4 w-[50vw] h-[50vw] bg-[#10b981] rounded-full blur-[200px] opacity-[0.05] pointer-events-none" />
         <div className="absolute bottom-0 right-1/4 w-[50vw] h-[50vw] bg-[#3b82f6] rounded-full blur-[200px] opacity-[0.05] pointer-events-none" />
 
+        {/* The Interactive Github Contribution Matrix */}
+        <GithubHeatmap />
+
         <div className="max-w-7xl mx-auto px-6 flex flex-col items-center relative z-10 hover:scale-[1.02] transition-transform duration-700">
 
-          <h2 className="text-5xl md:text-8xl lg:text-[10rem] font-black tracking-tighter text-black dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-b dark:from-white dark:to-white/20 mb-12 drop-shadow-xl transition-colors duration-500">
-            Let&apos;s Build.
-          </h2>
+          <div className="relative">
+            {/* A subtle masking shadow behind the text to protect readability against the background grid */}
+            <div className="absolute inset-0 bg-white/40 dark:bg-[#030303]/60 blur-3xl pointer-events-none" />
+            <h2 className="relative text-5xl md:text-8xl lg:text-[10rem] font-black tracking-tighter text-black dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-b dark:from-white dark:to-white/20 mb-12 drop-shadow-xl transition-colors duration-500">
+              Let&apos;s Build.
+            </h2>
+          </div>
 
           {/* Glowing Magnetic Button Layer */}
           <div className="relative group">
@@ -47,13 +59,13 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="flex flex-col sm:flex-row justify-between items-center w-full pt-16 mt-24 border-t border-black/10 dark:border-white/10 transition-colors duration-500">
+          <div className="flex flex-col sm:flex-row justify-between items-center w-full min-w-[300px] md:min-w-[800px] pt-16 mt-24 border-t border-black/10 dark:border-white/10 transition-colors duration-500">
             <p className="text-black/40 dark:text-white/40 text-sm font-medium tracking-wide mb-6 sm:mb-0">
               © {new Date().getFullYear()} AMMAR SAIFEE.
             </p>
 
             {/* Glass Icon Links */}
-            <div className="flex justify-center gap-4">
+            <div className="flex justify-center gap-4 relative z-20">
               <a href="https://github.com/ammarsksk" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 backdrop-blur-md text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white hover:scale-110 transition-all duration-300 shadow-sm" aria-label="GitHub">
                 <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.02c3.18-.35 6.5-1.5 6.5-7.1a5.1 5.1 0 0 0-1.4-3.6 4.9 4.9 0 0 0-.1-3.6s-1.1-.3-3.6 1.4a12.6 12.6 0 0 0-6.6 0C6.3 1.9 5.2 2.2 5.2 2.2a4.9 4.9 0 0 0-.1 3.6 5.1 5.1 0 0 0-1.4 3.6c0 5.6 3.3 6.7 6.5 7.1a4.8 4.8 0 0 0-1 3.02v4" /><path d="M9 20a5 5 0 0 1-5-2 5 5 0 0 1-1-4" /></svg>
               </a>

@@ -1,0 +1,211 @@
+
+Ammar Saifee 
+Khakhryawala
++91
+9
+310257659
+ |
+Email
+ | 
+Codeforces
+ | 
+LeetCode
+ | 
+Github
+Education
+Indraprastha
+Institute
+of
+Information
+Technology
+(IIIT)
+Delhi
+Aug.
+2023 – Aug
+. 2027
+Bachelor
+of Technology
+in Computer
+Science
+and 
+Engineering
+— CGPA: 
+8.0
+7
+New
+Delhi 
+Indian High 
+School ,
+ Dubai
+Mar. 20
+22
+ – Mar. 20
+23
+PCM+CS
+–
+12
+th
+:
+94
+.
+4
+%
+CBSE
+365759
+265293
+Relevant
+Coursework
+Discrete Mathematics
+-
+Computer
+Organization
+Operating
+Systems
+Advanced
+Programming
+Linear
+Algebra
+Multivariate
+Calculus
+Data
+Structures
+and 
+Algorith
+m
+Technical Skills
+Languages
+:
+Java,
+C++/C,
+Python,
+Front
+End
+Development
+, Assembly
+Tools
+and Tech
+:
+VSCode
+, PyCharm, 
+IntelliJ
+, C++ 
+STL,
+ JUnit,
+ NumPy, 
+Box
+2
+D, 
+Love
+2
+D,
+ JavaFX,
+ Matplotlib,
+Pygame
+Miro, Figma, 
+LibGDX
+, Gradle, Linux - Ubuntu, Canva, Microsoft Excel
+Projects
+Assembler and Simulator in RISC V 
+|
+Python                                                                                                          
+J
+an
+’24
+– Apr’24
+Professor: 
+Mr.Sujay
+ Deb
+Developed a Python-based tool to convert RISC-V assembly code into binary and simulate its execution.
+Designed the assembler to handle various instruction formats and optimized the simulator for accurate results.
+Operating System Components
+|
+C
+Aug’2
+4
+–
+Dec’24
+Professor: 
+Mr.
+Vivek
+ Kumar
+Built a CPU scheduler, ELF loader, and Linux shell with pipe support.
+Designed an efficient CPU scheduling algorithm.
+Developed an ELF loader to parse and execute binaries.
+Implemented a shell supporting commands, piping, and process management.
+Angry Bird Game
+|
+LibGDX
+,
+JavaFX
+,
+Java
+Aug’24
+-
+Nov’24
+Professor: 
+Mr.
+Arun
+ Balaji
+Developed an Angry Birds-inspired game using 
+LibGDX
+ for graphics 
+and Box2D for physics simulation.
+Implemented collision detection, animations, effects, and special abilities to replicate the gameplay.
+Youtube
+ Clone
+|
+HTML ,
+CSS ,
+ JavaScript
+Aug’24
+-
+Nov’24
+Built a front-end clone 
+of  using
+ HTML, CSS, and JavaScript fundamentals to create a responsive and 
+visually accurate interface.
+375284
+160999
+Position Of 
+Responsibilty
+Desi
+gnHub
+ Events team member
+Jan
+’2
+4
+-
+Apr’24
+365759
+190587
+Awards
+and
+Achievements
+S
+martIndia
+Hackathon
+-
+cleared
+the
+internal
+round,
+competed
+against
+24
+teams
+in
+my
+college
+(2024
+)
+.
+377825
+165482
+Hobbies and Interest
+Sports and 
+Fitness(
+C
+ricket and Squash)
+Readin
+g
+Music
